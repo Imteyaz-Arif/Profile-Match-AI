@@ -1,6 +1,15 @@
 # Profile Match AI 🎯
 
+**🚀 Live Application:** [https://profile-match-ai.onrender.com](https://profile-match-ai.onrender.com)
+
 An advanced, AI-powered web application that evaluates your resume against any Job Description. It uses Google's Gemini 2.5 Flash model to instantly provide a match percentage, shortlist likelihood, deeply analyzed keyword matching, and targeted recommendations for improvement.
+
+## 📖 How to Use the Service
+1. **Access the App**: Click the Live Application link above.
+2. **Upload Your Resume**: Drop your `.pdf` or `.docx` resume into the left upload box.
+3. **Provide the Job Description**: Either upload a Job Description document or paste the raw text of the job posting directly into the text tab.
+4. **Analyze Match**: Click the "Analyze Match" button.
+5. **Review Insights**: The AI will generate a customized dashboard displaying your Total Match Percentage, Likelihood to get Shortlisted, keyword gap-analysis, and actionable recommendations on exactly what you need to change to land the interview.
 
 ## ✨ Features
 - **Intelligent ATS Scanning**: Native support for extracting text from both `.pdf` and `.docx` resume formats.
