@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Match AI</title>
+    <link rel="icon" type="image/jpeg" href="/Assets/Fevicon.jpg">
+    <link rel="stylesheet" href="/styles.css?v=4">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="locked-scroll">
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+    </div>
+    <div class="bg-image-layer"></div>
+
+    <main class="container">
+        <header class="header">
+            <h1>Profile Match AI</h1>
+            <p>Evaluate your resume against any job description using AI to receive match percentage, shortlist
+                likelihood, keyword analysis, and tailored recommendations.</p>
+        </header>
+
+        <section class="upload-section">
+            <form id="uploadForm" class="upload-form">
+                <div class="upload-cards">
+                    <!-- Resume Upload Box -->
+                    <div class="input-card">
+                        <div class="tabs">
+                            <button type="button" class="tab-btn active" style="cursor:default">Upload Resume</button>
+                        </div>
+                        <div class="tab-content active">
+                            <div class="upload-box" id="resumeBox">
+                                <input type="file" id="resumeInput" accept=".pdf,.docx" required hidden>
+                                <label for="resumeInput" class="upload-label">
+                                    <div class="upload-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                                            <polyline points="9 15 12 12 15 15"></polyline>
+                                        </svg>
+                                    </div>
+                                    <h3>Upload Resume</h3>
+                                    <p>PDF or DOCX format</p>
+                                    <span class="file-name" id="resumeFileName"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JD Input Box -->
+                    <div class="input-card" id="jdContainer">
+                        <div class="tabs">
+                            <button type="button" class="tab-btn active" data-target="jdUploadView"
+                                onclick="switchTab(this)">Upload JD</button>
+                            <button type="button" class="tab-btn" data-target="jdTextView"
+                                onclick="switchTab(this)">Paste Text</button>
+                        </div>
+                        <div class="tab-content active" id="jdUploadView">
+                            <div class="upload-box" id="jdBox">
+                                <input type="file" id="jdInput" accept=".pdf,.docx" hidden>
+                                <label for="jdInput" class="upload-label">
+                                    <div class="upload-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <h3>Upload Job Description</h3>
+                                    <p>PDF or DOCX format</p>
+                                    <span class="file-name" id="jdFileName"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="jdTextView">
+                            <textarea id="jdTextInput" class="text-input"
+                                placeholder="Paste the Job Description text here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-row">
+                    <button type="submit" id="analyzeBtn" class="primary-btn" disabled>
+                        <span class="btn-text">Analyze Match ✨</span>
+                        <div class="loader-spinner" style="display: none;"></div>
+                    </button>
+                    <div id="errorMsg" class="error-message"></div>
+                </div>
+            </form>
+        </section>
+
+        <section id="resultSection" class="result-section hidden">
+            <!-- Results injected here -->
+        </section>
+    </main>
+
+    <script src="/script.js?v=4"></script>
+</body>
+
+</html>
