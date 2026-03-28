@@ -22,3 +22,6 @@ An advanced, AI-powered web application that evaluates your resume against any J
 - **AI Integration**: Google GenAI SDK (`gemini-2.5-flash`)
 - **Document Processing**: `pypdf`, `python-docx`
 - **Frontend Architecture**: Vanilla HTML5, CSS3, Javascript
+
+---
+**Developed by Imteyaz Arif**
