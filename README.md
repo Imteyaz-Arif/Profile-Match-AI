@@ -23,4 +23,5 @@ An advanced, AI-powered web application that evaluates your resume against any J
 - **Document Processing**: `pypdf`, `python-docx`
 - **Frontend Architecture**: Vanilla HTML5, CSS3, Javascript
 
+---
 **Developed by Imteyaz Arif**
