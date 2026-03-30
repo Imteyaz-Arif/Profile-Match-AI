@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderResults(data) {
         resultSection.innerHTML = `
-            <h2>Analysis Result</h2>
+            <h2>Analysis Results</h2>
             <div class="results-grid">
                 <div class="scores-container">
                     <div class="score-box">
