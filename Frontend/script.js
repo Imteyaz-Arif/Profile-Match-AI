@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderResults(data) {
         resultSection.innerHTML = `
-            <h2>Analysis Results</h2>
+            <h2>Analysis Result</h2>
             <div class="results-grid">
                 <div class="scores-container">
                     <div class="score-box">
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <div class="details-container">
                     <div class="result-card">
-                        <h3>Match Keywords</h3>
+                        <h3>Matching Keywords</h3>
                         <div class="tags">
                             ${data.matchingKeywords && data.matchingKeywords.length > 0
                 ? data.matchingKeywords.map(k => `<span class="tag match">${k}</span>`).join('')
